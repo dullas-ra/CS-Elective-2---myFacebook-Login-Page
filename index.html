@@ -10,93 +10,8 @@
     <meta name="description" content="">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
-
-    <style>
-      body{
-      background-color: #e5eaf0e5;
-      font-family: "helvetica";
-      }
-      h1{
-          color: #3688f3;
-          font-size: 60px;
-          font-weight: bold;
-          padding-left:25px;
-          padding-right: 20px;
-      }
-      h3{
-          padding-left:25px;
-          padding-right: 20px;
-      }
-      .login-form{
-          background-color: #fff;
-          border-radius: 8px;
-          padding: 22px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-          width: 430px;
-      }
-      .createPage{
-          width: 440px;
-      }
-      .btn-custom{
-          background-color: #368af8;
-          border: none;
-          border-radius: 6px;
-          height: 48px;
-          width: 100%;
-          font-size: 20px;
-          line-height: 28px;
-          color: #fff;
-          font-weight:700;
-      }
-      .btn-success{
-          background-color: rgb(123, 179, 39);
-          border: none;
-      }
-      .btn-custom:hover{
-          background-color: #317fe6;
-      }
-      .btn-success:hover{
-          background-color: rgb(113, 165, 36);;
-      }
-      .form-control{
-          height: 52px;
-          font-size: 18px !important;
-          color: #f2f2f2;
-      }
-      .btn-custom{
-          color: #fff !important;
-      }
-
-      a{
-          text-decoration: none;
-      }
-      a:hover{
-          text-decoration: underline;
-      }
-      footer{
-          clear: both;
-          position: relative;
-          height: 210px;
-          margin-top: -210px;
-          border-bottom: 210px solid #f9fbfd;
-      }
-      ol {
-          display: flex;
-          flex-wrap: wrap;
-          list-style-type: none;
-          padding: 20px 0;
-          position: relative;
-          max-width: 1145px;
-          margin: 0 auto;
-      }
-      li {
-          color: #304d86;
-          padding-right: 15px;
-          font-size: 12px;
-
-      }
-
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="login.js"></script>
   </head>
 
   <body>
@@ -109,14 +24,16 @@
         <div class="col-md-5">
           <form class="login-form">
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Email or phone number"
+              <input type="text" id="email" class="form-control" placeholder="Email or phone number"
                 required>
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" placeholder="Password"
+              <input type="password" id="password" class="form-control" placeholder="Password"
                 required>
             </div>
-            <button type="button" class="btn btn-custom btn-lg btn-block mt-3">Login</button>
+            <a class="button">
+            <button type="button" class="btn btn-custom btn-lg btn-block mt-3" onclick="validate()">Login</button>
+            </a>
             <div class="text-center pt-3 pb-3">
               <a href="">Forgot password?</a>
               <hr>
