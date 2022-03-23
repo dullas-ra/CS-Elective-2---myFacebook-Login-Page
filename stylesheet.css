@@ -1,0 +1,83 @@
+body{
+    background-color: #e5eaf0e5;
+    font-family: "helvetica";
+}
+h1{
+    color: #3688f3;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left:25px;
+    padding-right: 20px;
+}
+h3{
+    padding-left:25px;
+    padding-right: 20px;
+}
+.login-form{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    width: 430px;
+}
+.createPage{
+    width: 440px;
+}
+.btn-custom{
+    background-color: #368af8;
+    border: none;
+    border-radius: 6px;
+    height: 48px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-weight:700;
+}
+.btn-success{
+    background-color: rgb(123, 179, 39);
+    border: none;
+}
+.btn-custom:hover{
+    background-color: #317fe6;
+}
+.btn-success:hover{
+    background-color: rgb(113, 165, 36);;
+}
+.form-control{
+    height: 52px;
+    font-size: 18px !important;
+    /*color: #f2f2f2;*/
+}
+.btn-custom{
+    color: #fff !important;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    clear: both;
+    position: relative;
+    height: 210px;
+    margin-top: -210px;
+    border-bottom: 210px solid #f9fbfd;
+}
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 20px 0;
+    position: relative;
+    max-width: 1145px;
+    margin: 0 auto;
+}
+li {
+    color: #304d86;
+    padding-right: 15px;
+    font-size: 12px;
+
+}
